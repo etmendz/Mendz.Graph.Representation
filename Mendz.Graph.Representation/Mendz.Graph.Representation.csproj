@@ -2,6 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Authors>Mendz</Authors>
+    <Company>Mendz</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Provides a library of classes and types to represent Graph Theory graphs as list and/or matrix.</Description>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <Copyright>© 2017 Mendz. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/etmendz/Mendz.Graph.Representation</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/etmendz/Mendz.Graph.Representation</RepositoryUrl>
+    <PackageTags>graph-theory graph adjacency-list adjacency-matrix laplacian-matrix degree-matrix incidence-matrix</PackageTags>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Mendz.Graph\Mendz.Graph\Mendz.Graph.csproj" />
+    <ProjectReference Include="..\..\Mendz.Matrix\Mendz.Matrix\Mendz.Matrix.csproj" />
+  </ItemGroup>
 
 </Project>
