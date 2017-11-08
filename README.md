@@ -1,5 +1,5 @@
 # Mendz.Graph.Representation
-Provides a library of classes and types to represent Graph Theory graphs as list and/or matrix.
+Provides a library of classes and types to represent Graph Theory graphs as list and/or matrix. [Wiki](https://github.com/etmendz/Mendz.Graph.Representation/wiki)
 ## Namespaces
 ### Mendz.Graph.Representation
 #### Contents
