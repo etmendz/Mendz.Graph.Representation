@@ -92,6 +92,30 @@ DegreeMatrix | Represents a degree matrix.
 InDegreeMatrix | Represents an indegree matrix.
 OutDegreeMatrix | Represents an outdegree matrix.
 IncidenceMatrix | Represents an incidence matrix.
+#### AdjacencyMatrix
+The main problem that the adjacency matrix solves is to show if a vertex u is adjacent to another vertex v, or not -- by "adjacent" it means that vertex u and vertex v are the endpoints in an edge. To check if two vertices are adjacent or not:
+```C#
+using Mendz.Graph;
+using Mendz.Graph.Representation;
+...
+Graph graph = new Graph();
+...
+// ToDo: initialize the graph...
+...
+AdjacencyMatrix adjacencyMatrix = new AdjacencyMatrix(graph);
+adjacencyMatrix.Fill();
+Vertex[] indexedVertices = graph.IndexVertices();
+Vertex vertex1 = graph.Vertices[250]; // pick any vertex ID that exists in the graph
+Vertex vertex2 = graph.Vertices[230]; // pick any vertex ID that exists in the graph
+int i = Array.BinarySearch(indexedVertices, vertex1);
+int j = Array.BinarySearch(indexedVertices, vertex2);
+bool adjacent = (adjacencyMatrix.Matrix[i, j] == 1); // 1 if adjacent, 0 if not adjacent
+Console.WriteLine(indexedVertices[i].Value.ToString() + 
+    " is " + 
+    (adjacent ? "" : "not") + 
+    " adjacent to " + 
+    indexedVertices[j].Value.ToString());
+```
 ### Mendz.Graph.Representation.Sparse
 #### Contents
 Name | Description
