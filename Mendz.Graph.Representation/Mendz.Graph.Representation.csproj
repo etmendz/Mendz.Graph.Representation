@@ -8,11 +8,11 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Description>Provides a library of classes and types to represent Graph Theory graphs as list and/or matrix.</Description>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
-    <Copyright>© 2017 Mendz. All rights reserved.</Copyright>
+    <Copyright>© 2018 Mendz. All rights reserved.</Copyright>
     <PackageProjectUrl>https://github.com/etmendz/Mendz.Graph.Representation</PackageProjectUrl>
     <RepositoryUrl>https://github.com/etmendz/Mendz.Graph.Representation</RepositoryUrl>
     <PackageTags>graph-theory graph adjacency-list adjacency-matrix laplacian-matrix degree-matrix incidence-matrix</PackageTags>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <PackageReleaseNotes>Compiled for .Net Standard.</PackageReleaseNotes>
   </PropertyGroup>
 
